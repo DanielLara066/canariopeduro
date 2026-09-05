@@ -208,7 +208,7 @@ export default function Home() {
                       key={name}
                       aria-label={index + 1 + ' de 10: ' + name}
                     >
-                      <a className="product" href={'/produto/' + productSlug(name)} aria-label={'Abrir ' + name}>
+                      <a className="product" href={'/produto/' + productSlug(name) + '.html'} aria-label={'Abrir ' + name}>
                         <div className={'product-image product-image-' + i}>
                           <span className="sample">SEM FOTO</span>
                           <span className="product-placeholder">
