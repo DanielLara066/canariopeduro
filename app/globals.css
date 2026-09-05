@@ -280,6 +280,19 @@ button:focus-visible {
 }
 .product {
   min-width: 0;
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+.product:hover .product-image,
+.product:focus-visible .product-image {
+  border-color: #b7c7b5;
+  box-shadow: 0 8px 22px rgb(24 60 49 / 10%);
+  transform: translateY(-3px);
+}
+.product-image {
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
 }
 .product-image {
   aspect-ratio: 1/1.02;
