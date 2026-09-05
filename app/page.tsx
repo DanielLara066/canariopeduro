@@ -208,7 +208,7 @@ export default function Home() {
                       key={name}
                       aria-label={index + 1 + ' de 10: ' + name}
                     >
-                      <article className="product">
+                      <a className="product" href={'/produto/' + productSlug(name)} aria-label={'Abrir ' + name}>
                         <div className={'product-image product-image-' + i}>
                           <span className="sample">SEM FOTO</span>
                           <span className="product-placeholder">
@@ -223,11 +223,11 @@ export default function Home() {
                         <div className="product-info">
                           <span className="product-category">{c.name}</span>
                           <h3>{name}</h3>
-                          <a className="product-open" href={'/produto/' + productSlug(name)}>
-                            Abrir produto <ArrowUpRight size={16} />
-                          </a>
+                          <span className="product-open">
+                            Ver detalhes <ArrowUpRight size={16} />
+                          </span>
                         </div>
-                      </article>
+                      </a>
                     </CarouselItem>
                   ))}
                 </CarouselContent>
