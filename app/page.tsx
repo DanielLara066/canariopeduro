@@ -69,6 +69,7 @@ const categories = [
     ],
   },
 ];
+const productSlug = (name: string) => name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 export default function Home() {
   return (
     <>
@@ -222,44 +223,9 @@ export default function Home() {
                         <div className="product-info">
                           <span className="product-category">{c.name}</span>
                           <h3>{name}</h3>
-                          <details className="product-details">
-                            <summary>
-                              Abrir produto <ArrowUpRight size={16} />
-                            </summary>
-                            <div className="product-detail-panel">
-                              <div className="product-options">
-                            <label>
-                              Tamanho
-                              <select aria-label={'Tamanho de ' + name}>
-                                <option>Único</option>
-                                <option>Pequeno</option>
-                                <option>Médio</option>
-                                <option>Grande</option>
-                              </select>
-                            </label>
-                            <label>
-                              Coloração
-                              <select aria-label={'Coloração de ' + name}>
-                                <option>Natural</option>
-                                <option>Amarelo</option>
-                                <option>Branco</option>
-                                <option>Verde</option>
-                              </select>
-                            </label>
-                              </div>
-                            </div>
-                          </details>
-                          <div className="product-bottom">
-                            <span>Preço a definir</span>
-                            <button
-                              disabled
-                              aria-label={
-                                'Compra de ' + name + ' ainda não disponível'
-                              }
-                            >
-                              Em breve <ArrowUpRight size={16} />
-                            </button>
-                          </div>
+                          <a className="product-open" href={'/produto/' + productSlug(name)}>
+                            Abrir produto <ArrowUpRight size={16} />
+                          </a>
                         </div>
                       </article>
                     </CarouselItem>
