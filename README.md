@@ -19,4 +19,3 @@ Os botões de compra estão desativados intencionalmente. A integração Yampi a
 - Alex Pereyra / Pexels: https://www.pexels.com/photo/bright-yellow-canary-perched-on-a-branch-28981504/
 - Rodrigo Chaves / Pexels: https://www.pexels.com/photo/close-up-shot-of-a-yellow-canary-6398822/
 - Licença: https://www.pexels.com/license/
-
