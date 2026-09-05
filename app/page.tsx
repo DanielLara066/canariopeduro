@@ -224,7 +224,7 @@ export default function Home() {
                           <span className="product-category">{c.name}</span>
                           <h3>{name}</h3>
                           <span className="product-open">
-                            Ver detalhes <ArrowUpRight size={16} />
+                            Ver produto e adicionar à sacola <ArrowUpRight size={16} />
                           </span>
                         </div>
                       </a>
