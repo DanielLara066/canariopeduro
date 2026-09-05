@@ -933,4 +933,5 @@ button:focus-visible {
     flex-basis: 75%;
   }
 }
+.option-group{display:flex;flex-direction:column;gap:10px}.option-label{font-size:13px;font-weight:700}.size-options{display:flex;gap:8px;flex-wrap:wrap}.size-option{min-width:48px;height:42px;padding:0 10px;border:1px solid #ccd8c9;border-radius:5px;background:#fff;color:#183c31;font:inherit;cursor:pointer}.size-option.selected{border-color:#183c31;background:#183c31;color:#fff}.color-options{display:flex;gap:12px;align-items:center}.color-option{width:30px;height:30px;border-radius:50%;border:2px solid transparent;background:var(--color);box-shadow:0 0 0 1px #cbd5c7;cursor:pointer}.color-option.selected{box-shadow:0 0 0 2px #183c31,0 0 0 4px #fafbf7}
 
