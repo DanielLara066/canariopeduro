@@ -96,6 +96,7 @@ export default function Home() {
         <nav aria-label="Navegação principal">
           <a href="#produtos">Produtos</a>
           <a href="#historia">Nossa história</a>
+          <a href="/carrinho.html">Sacola</a>
         </nav>
         <a className="header-link" href="#categorias">
           Conheça a loja <ArrowUpRight size={18} />
